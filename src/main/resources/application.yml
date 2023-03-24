@@ -1,0 +1,12 @@
+management:
+  endpoint:
+    beans:
+      cache:
+        time-to-live:
+
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
