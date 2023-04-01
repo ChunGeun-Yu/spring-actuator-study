@@ -1,12 +1,28 @@
 management:
   endpoint:
-    beans:
-      cache:
-        time-to-live:
-
-
+    env:
+      show-values: ALWAYS
   endpoints:
     web:
       exposure:
         include: "*"
+  info:
+    git:
+      mode: FULL
+    os:
+      enabled: true
+    java:
+      enabled: true
+    env:
+      enabled: true
 
+
+info:
+  my-app:
+    any-value: someValue
+    group-id: "@project.groupId@"
+    artifact-id: "@project.artifactId@"
+    encoding: "@project.build.sourceEncoding@"
+    java:
+      version: "@java.version@"
+  made-by: developerY
